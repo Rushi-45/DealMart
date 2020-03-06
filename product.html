@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Dealmart - Shop or Rent</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<link type="text/css" rel="stylesheet" href="css/slick.css" />
+
+	<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+
+	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<link rel="apple-touch-icon" sizes="76x76" href="./AssetFournisseurs/img/apple-icon.png">
+
+	<link rel="icon" type="image/png" href="./AssetFournisseurs/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>
+		Dealmart - Shop or Rent
+	</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+		name='viewport' />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="./AssetFournisseurs/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="./AssetFournisseurs/css/now-ui-dashboard.css?v=1.3.0" rel="stylesheet" />
+	<link href="./AssetFournisseurs/demo/demo.css" rel="stylesheet" />
+</head>
+</head>
+
+<body>
+
+	<body class="">
+		<div class="wrapper ">
+			<div class="sidebar" data-color="orange">				
+				<div class="logo">
+
+					<a href="" class="simple-text logo-normal">
+						Supplier Area</a>
+				</div>
+				<div class="sidebar-wrapper" id="sidebar-wrapper">
+					<ul class="nav">
+
+
+
+
+						<li>
+							<a href="./dashboard.html">
+								<i class="now-ui-icons users_single-02"></i>
+								<p>User Profile</p>
+							</a>
+						</li>
+						<li class="active">
+							<a href="./product.html">
+								<i class="now-ui-icons design_bullet-list-67"></i>
+								<p>Add a product</p>
+							</a>
+						</li>
+						<li>
+							<a href="./mesProduits.html">
+								<i class="now-ui-icons design_bullet-list-67"></i>
+								<p>List of products</p>
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:void(0)" onclick="deconnection()">
+								<i class="now-ui-icons gestures_tap-01"></i>
+								<p>Logout</p>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="main-panel" id="main-panel">
+
+				<nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
+					<div class="container-fluid">
+						<div class="navbar-wrapper">
+
+
+				</nav>
+
+				<div class="panel-header panel-header-sm">
+				</div>
+
+
+
+				<div class="section">
+					<div class="container">
+						<div class="content" style="margin-top: -9%; margin-left: 15%">
+							<div class="row">
+								<div class="col-md-8">
+									<div class="card">
+										<div class="card-header">
+											<h4 class="card-title"> Add a Product</h4>
+										</div>
+										<div class="card-body">
+											<div class="form-group">
+												<select class="input-select" id="catégorie">
+                                                    <option value="laptops">Books</option>
+                                                        <option value="cameras">Calculators</option>
+                                                        <option value="accessoires">Geometry</option>
+                                                        <option value="accessoires">Others</option>
+                                                </select><br><br>
+												<input class="form-control" id="marque" placeholder="marque"><br><br>
+
+												<input class="form-control" id="produit"
+													placeholder="Product name"><br><br>
+												<div>
+
+													<input class="form-control" id="price" placeholder="Prix"><br><br>
+													<span class="product-available"></span>
+												</div>
+												<div> <input class="form-control" id="description"
+														placeholder="description">
+												</div>
+
+
+												<div class="add-to-cart">
+													<div class="qty-label">
+														Qty
+														<div class="input-number">
+															<input type="number" class="form-control" id="number">
+															<span class="qty-up">+</span>
+															<span class="qty-down">-</span>
+														</div>
+
+													</div>
+													<div class="form-group" >
+														<input type="file" style="opacity:1!important;position: relative!important;" class="form-control" id="img" onchange="getImage(this)">
+
+													</div>
+												</div>
+												<div class="form-group">
+													<input type="submit" class="form-control"
+														style="background-color: orangered" onclick="enregistrer()"
+														value="Register"><br>
+												</div>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="./AssetFournisseurs/js/product.js"></script>
+
+	</body>
+
+</html>
